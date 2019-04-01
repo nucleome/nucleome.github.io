@@ -5,10 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>NB Apps Portal</title>
+
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="manifest" href="/manifest.json" />
     <style>
         .hide {
             display: none;
+        }
+        .panel {
+            width: 400px;
+            float: left;
+            padding: 10px;
         }
     </style>
 </head>
@@ -19,34 +26,39 @@
         update.
     </div>
     <div>
-        <div class="panel">
-            <h4>Chrome Extension</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">Chrome Extension</h4>
+            </div>
+            <div class="panel-body">
             <ul>
             <li>
             <a href="https://chrome.google.com/webstore/detail/nbrowser-plugin/djcdicpaejhpgncicoglfckiappkoeof" target="_blank">NBridge</a>
             </li>
             </ul>
+            </div>
         </div>
 
-        <div class="panel">
-            <h4>Apps</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Apps</h4>
+            </div>
+            <div class="panel-body">
             <ul>
                 <li>
                 <a href="https://genome.compbio.cs.cmu.edu" target="_blank">Nucleome Browser</a>
                 </li>
             </ul>
+            </div>
         </div>
-        <div class="panel">
-            <h4>One Page App in Gist</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+            <h4 class="panel-title">One Page App in Gist</h4>
+            </div>
+            <div class="panel-body">
             <a href="https://bl.ocks.org/nb1page">NBridge One Page</a></div>
+            </div>
          </div>
-        <div class="panel">
-            <h4>Third Party Apps</h4>
-        </div>
-        <div class="panel">
-            <h4>WebPage Cases</h4>
-
-        </div>
     </div>
     <script src="app.js"></script>
 </body>
