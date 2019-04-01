@@ -32,7 +32,6 @@ self.addEventListener('fetch', function(event) {
 function requestBackend(event) {
     var url = event.request.clone();
     return fetch(url).then(function(res) {
-        //if not a valid response send the error
         if (!res || res.status !== 200 || res.type !== 'basic') {
             return res;
         }
@@ -59,7 +58,6 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('message', function(event) {
-    console.log("get message", event)
     if (event.data.action === 'skipWaiting') {
         self.skipWaiting();
     }
