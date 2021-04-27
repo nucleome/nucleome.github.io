@@ -4,6 +4,11 @@
         "icon":"https://vis.nucleome.org/static/img/icon3/icon-512.png",
         "sw":"https://viz.nucleome.org/sw.js",
         "URL":"https://vis.nucleome.org"
+    },
+    {
+        "name":"Omics Icon Maker",
+        "icon":"https://youdata.github.io/ome_icon/img/icon-192.png",
+        "sw":"https://youdata.github.io/ome_icon/sw.js",
+        "URL":"https://youdata.github.io/ome_icon"
     }
-
 ]
