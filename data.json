@@ -1,0 +1,9 @@
+[
+    {
+        "name":"Nucleome Browser",
+        "icon":"https://vis.nucleome.org/static/image/icon.png",
+        "sw":"https://vis.nucleome.org/sw.js",
+        "URL":"https://vis.nucleome.org"
+    }
+
+]

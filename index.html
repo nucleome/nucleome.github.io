@@ -1,66 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Nucleome Apps</title>
-
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="manifest" href="/manifest.json" />
+    <title>Nucleome App Store</title>
+    <script src="./lib.js"></script>
+    <link rel="stylesheet" href="./style/font.css" type="text/css" />
     <style>
-        .hide {
-            display: none;
+        html,
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
         }
-        .panel {
-            width: 400px;
-            float: left;
-            padding: 10px;
+
+        body {
+            position: relative;
         }
     </style>
 </head>
 
 <body>
-    <div id="notify" class="hide">
-        A new version of this app is available. Click <button id="reload">here</button>to
-        update.
+    <div id="container">
     </div>
-    <div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-            <h4 class="panel-title">Chrome Extension</h4>
-            </div>
-            <div class="panel-body">
-            <ul>
-            <li>
-            <a href="https://chrome.google.com/webstore/detail/nbrowser-plugin/djcdicpaejhpgncicoglfckiappkoeof" target="_blank">NBridge</a>
-            </li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">Apps</h4>
-            </div>
-            <div class="panel-body">
-            <ul>
-                <li>
-                <a href="https://vis.nucleome.org" target="_blank">Nucleome Browser</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-            <h4 class="panel-title">One Page App in Gist</h4>
-            </div>
-            <div class="panel-body">
-            <a href="https://bl.ocks.org/nb1page">NBridge One Page</a></div>
-            </div>
-         </div>
-    </div>
-    <script src="app.js"></script>
+    <script>
+        (function(S){
+            var el = document.getElementById("container")
+            fetch("./data.json",{})
+                .then( d => d.json())
+                .then(d => {
+                    console.log(d)
+                    d.forEach((d)=>{
+                        var c = new S.AppCard()
+                        c.data = d  
+                        el.appendChild(c)
+                    })
+                })
+                .catch(e => {
+                    console.warn("error",e)
+                })
+        })(sand)
+    </script>
 </body>
 
 </html>
