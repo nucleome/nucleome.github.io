@@ -1,7 +1,7 @@
 [
     {
         "name":"Nucleome Browser",
-        "icon":"https://vis.nucleome.org/static/image/icon.png",
+        "icon":"https://vis.nucleome.org/static/img/icon3/icon-512.png",
         "sw":"https://viz.nucleome.org/sw.js",
         "URL":"https://vis.nucleome.org"
     }
