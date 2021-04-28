@@ -6,9 +6,20 @@
         "URL":"https://vis.nucleome.org"
     },
     {
+        "name":"Nucleome Bridge",
+        "icon":"https://lh3.googleusercontent.com/-jchS5WECgMF5MVAMd9U6Z9XoLGHNcgvT-s0WIXAQ6mxQGfkDYwOA1t0ykZcCrnicwUBrmeJb2ehSajm3EbYdJmL=w128-h128-e365-rj-sc0x00ffffff",
+        "URL":"https://chrome.google.com/webstore/detail/nucleome-bridge/djcdicpaejhpgncicoglfckiappkoeof?hl=en"
+    },
+    {
+        "name":"Nucleome Server",
+        "icon":"/img/ns.icon-192.png",
+        "URL":"https://github.com/nucleome/nucleserver"
+    },
+    {
         "name":"Omics Icon Maker",
         "icon":"https://youdata.github.io/ome_icon/img/icon-192.png",
         "sw":"https://youdata.github.io/ome_icon/sw.js",
         "URL":"https://youdata.github.io/ome_icon"
     }
+
 ]
