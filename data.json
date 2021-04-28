@@ -18,6 +18,13 @@
         "URL":"https://github.com/nucleome/nucleserver"
     },
     {
+        "name":"Nucleome CodePen",
+        "icon":"/img/codepen.icon-500.png",
+        "version":"sandbox",
+        "URL":"https://codepen.io/collection/DkGVYL"
+    },
+
+    {
         "name":"Omics Icon Maker",
         "icon":"https://youdata.github.io/ome_icon/img/icon-192.png",
         "sw":"https://youdata.github.io/ome_icon/sw.js",
