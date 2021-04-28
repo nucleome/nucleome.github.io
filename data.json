@@ -13,10 +13,17 @@
     },
     {
         "name":"Nucleome Server",
-        "icon":"/img/ns.icon-192.png",
+        "icon":"/img/ns.svg",
         "releaseTag":"https://img.shields.io/github/v/release/nucleome/nucleserver.svg",
         "URL":"https://github.com/nucleome/nucleserver"
     },
+    {
+        "name":"Nucleome Gallery",
+        "icon":"/img/ng.svg",
+        "version":"experimental",
+        "URL":"https://gallery.nucleome.org"
+    },
+
     {
         "name":"Nucleome CodePen",
         "icon":"/img/codepen.icon-500.png",
